@@ -4,7 +4,6 @@ namespace PC28168.U202414313.Openpay.Platform.Shared.Infrastructure.Persistence.
 
 public static class ModelBuilderExtensions
 {
-
     public static void UseSnakeCaseNamingConvention(this ModelBuilder builder)
     {
         foreach (var entity in builder.Model.GetEntityTypes())

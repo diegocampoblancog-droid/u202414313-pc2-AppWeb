@@ -18,7 +18,6 @@ public class DisbursementOrdersController(
     ILogger<DisbursementOrdersController> logger)
     : ControllerBase
 {
-  
     [HttpPost]
     [ProducesResponseType(typeof(DisbursementOrderResource), StatusCodes.Status201Created)]
     [ProducesResponseType(typeof(string), StatusCodes.Status400BadRequest)]

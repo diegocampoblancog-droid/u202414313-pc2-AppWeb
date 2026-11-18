@@ -2,14 +2,12 @@
 
 namespace PC28168.U202414313.Openpay.Platform.Shared.Infrastructure.Interfaces.ASP.Configuration.Extensions;
 
-
 public static partial class StringExtensions
 {
 
     public static string ToKebabCase(this string text)
     {
         if (string.IsNullOrEmpty(text)) return text;
-
         return KebabCaseRegex().Replace(text, "-$1")
             .Trim()
             .ToLower();

@@ -19,7 +19,6 @@ public sealed record FinancialAmount
         CurrencyCode = currencyCode.Trim();
     }
 
-
     public decimal Amount { get; }
     
     public string CurrencyCode { get; }
